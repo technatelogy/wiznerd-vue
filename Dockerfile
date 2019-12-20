@@ -11,8 +11,8 @@ RUN apt install procps openssh-client -y
 # Install required packages for Cypress
 RUN apt install xvfb libgtk2.0-0 libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 -y
 
-# Install Git
-RUN apt install git -y
+# Install Git and jq
+RUN apt install git jq -y
 
 # Update npm.
 RUN npm install --global npm
