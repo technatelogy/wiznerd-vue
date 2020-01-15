@@ -17,11 +17,14 @@ RUN apt install git jq -y
 # Update npm.
 RUN npm install --global npm
 
-# Install node packages.
+# Install firebase-tools.
 RUN npm install --global firebase-tools @vue/cli
 
 # Install bit.
 RUN npm install --global bit-bin
+
+# Install build essentials for node-gyp
+RUN apt install build-essential
 
 # Default run command.
 WORKDIR /var/www/client
