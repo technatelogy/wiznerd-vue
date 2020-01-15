@@ -24,7 +24,7 @@ RUN npm install --global firebase-tools @vue/cli
 RUN npm install --global bit-bin
 
 # Install build essentials for node-gyp
-RUN apt install build-essential
+RUN apt install build-essential -y
 
 # Default run command.
 WORKDIR /var/www/client
