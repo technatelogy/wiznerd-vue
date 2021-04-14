@@ -12,7 +12,8 @@ RUN apt install procps openssh-client git jq build-essential -y
 RUN apt install xvfb libgtk2.0-0 libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 -y
 
 # Update npm.
-RUN npm install --global npm
+# Skip updating npm for now.
+#RUN npm install --global npm
 
 # Install firebase-tools.
 RUN npm install --global firebase-tools @vue/cli bit-bin
