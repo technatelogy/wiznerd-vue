@@ -1,5 +1,5 @@
 # Init the node image .
-FROM node:10.23-slim
+FROM node:14.16-slim
 
 # Do things as the root user.
 USER root
